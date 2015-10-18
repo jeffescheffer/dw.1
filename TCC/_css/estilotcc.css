@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+div#corpo {
+  position:absolute;
+  width: 1200px;
+  height: auto;
+  background-color: #fffafa;
+  
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: auto;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+div#interface {
+  position: absolute;
+  width: 600px;
+  height: 90px;
+	background-color: #ffffff;
+	margin: 10px auto 0px auto;
+  margin-left: 0px;
+	padding: 5px 10px 10px 10px;
+	box-shadow: 0px 0px 10px black;
+	}
+
+div#logo {
+  position: relative;
+  width: 400px;
+	height: 80px;
+  margin-top: 5px;
+  margin-left: -5px;
+	}
+
+div#login {
+  width: 0px;
+	height: 80px;
+	margin-top: 7px;
+	margin-left:550px;
+  background-color: yellow;
+	}
+
+div#menu {
+position: relative;
+background-color:;
+width: 280px;
+height: 360px;
+margin-top: 140px;
+padding: 20px 0px 0px 20px;
+box-shadow: 0px 0px 10px black;
+}
+
+img#logo {
+	width: 600px;
+	height: 80px;
+  margin: 10px
+	box-shadow: 0px 0px 10px black;
+	border-radius: 10px;
+  }
+
+table#login {
+  width: 100%;
+  float: center;
+  margin-top: -16px;
+  margin-left: 150px;
+}
+
+table#tablefotos {
+  border:1px solid black;
+  border-spacing: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -20px 20px 20px black;
+}
+
+table#tablefotos td {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  padding: 5px;
+  box-shadow: 0px 0px 10px black;
+}
+img#fotocaminhao {
+ 
+ }
+
+button#login {
+  display:inline-block;
+  border:none;
+  border-radius: 10px;
+  width: 250px;
+  height: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  font:400 16px Arial;
+  color:#999;
+  padding: 10px;
+  padding-top: 10px;
+  -webkit-transition:all 0.5s linear;
+}
+
+button#login:hover {
+  background:#00456F;
+  color:#fff;
+  -webkit-transition:all 0.5s linear;
+}
+
+.bradius{
+  border-radius:6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+}
+
+button#login:hover a{
+  color:#fff;
+}
+
+section#corpo {
+  display: block;
+  width: 300px;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right: 15px;
+}
+
+  div#fotossite {
+  width: 1100px;
+  height: 800px;
+  border: 1px solid black;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:none;
+  box-shadow: 10px 10px 10px black;
+  }
