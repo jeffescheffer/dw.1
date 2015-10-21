@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pagina Produto</title>
+	<title>PaginaProduto</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="_css/estilotcc.css"/>
 	<link rel="stylesheet" type="text/css" href="_css/estilotcc_cliente.css">
@@ -25,48 +25,51 @@
 					<br><br>
 				<button id="login" type="submit"><a href=""/a>Calculadora</button>
 			</div>
-					
 					<div id="menu_cliente">
-						<button id="login_cliente" type="submit"><a href=""/a>Cadastrar</button>
-							
-						<button id="login_cliente" type="submit"><a href=""/a>Excluir</button>
-							
-						<button id="login_cliente" type="submit"><a href=""/a>Consultar</button>
-							<br><br>
-						<button id="login_cliente" type="submit"><a href=""/a>Alterar</button>
-							
-						<button id="login_cliente" type="submit"><a href=""/a>Editar</button>
+						<label id="valortotal">Valor: </label><input id="valortotal" type="text" class="txt bradius" name="valortotal" value=""/>
+						<br><br>
+						<label id="valordesconto">Valor com desconto: </label><input id="valordesconto" type="text" class="txt bradius" name="valordesconto" value=""/>
+					<!--<button id="login_cliente" type="submit"><a href=""/a>Cadastrar</button>
+						
+					<button id="login_cliente" type="submit"><a href=""/a>Excluir</button>
+						
+					<button id="login_cliente" type="submit"><a href=""/a>Consultar</button>
+						<br><br>
+					<button id="login_cliente" type="submit"><a href=""/a>Alterar</button>
+						
+					<button id="login_cliente" type="submit"><a href=""/a>Editar</button>
 
-						<button id="login_cliente" type="submit"><a href=""/a>Orçamento</button>
-
+					<button id="login_cliente" type="submit"><a href=""/a>Orçamento</button>-->
+					
+			</div>
+					<div id="visualizacao_cliente">
+					<form id="visualizacao_cliente" class="form bradius">
+						<fieldset id="visualizacao_carroceria">
+						<legend>Carroceria</legend>
+						<label id="razaosocial">Razão Social: </label><input id="razaosocial" type="text" class="txt bradius" name="razaosocial" value=""/>
+						<label id="endereco">Endereço: </label><input id="endereco" type="text" class="txt bradius" name="endereco" value=""/>	
+						<label id="bairro">Bairro: </label><input id="bairro"type="text" class="txt bradius" name="bairro" value=""/>
+						<label id="cidade">Cidade: </label><input id="cidade" type="text" class="txt bradius" name="cidade" value=""/>
+						<label id="uf">UF: </label><input id="uf" type="text" class="txt bradius" name="uf" value=""/>
+						<label id="cep">CEP: </label><input id="cep" type="text" class="txt bradius" name="cep" value=""/>
+						<label id="ddd">DDD: </label><input id="ddd" type="text" class="txt bradius" name="ddd" value=""/>
+						<label id="contato">Contato: </label><input id="contato" type="text" class="txt bradius" name="contato" value=""/>
+						<label id="fone1">Fone: </label><input id="fone1" type="text" class="txt bradius" name="fone1" value=""/>
+						<input id="fone2"type="text" class="txt bradius" name="fone2" value=""/>
+						<label id="email1">E-mail: </label><input id="email1" type="text" class="txt bradius" name="email1" value=""/>
+						<input id="email2" type="text" class="txt bradius" name="email2" value=""/>
+						<label id="classificacao">Classificação: </label><input id="classificacao" type="text" class="txt bradius" name="classificacao" value=""/>
+						<label id="regiao">Região: </label><input id="regiao" type="text" class="txt bradius" name="regiao" value=""/>
+						<label id="cnpj">CNPJ: </label><input id="cnpj" type="text" class="txt bradius" name="cnpj" value=""/>
+						</fieldset>	
+						<br>
+						<textarea id="visualizacao_cliente" rows="13" cols="122">							
+						</textarea>
+						</form>
 					</div>
-
-						<div id="visualizacao_produto">
-							<form id="visualizacao_produto" class="form bradius">
-								<fieldset id="visualizacao_produto">
-									<legend>Carroceria</legend>
-			<label id="razaosocial">Razão Social: </label><input id="razaosocial" type="text" class="txt bradius" name="razaosocial" value=""/>	
-			<label id="endereco">Endereço: </label><input id="endereco" type="text" class="txt bradius" name="endereco" value=""/>	
-			<label id="bairro">Bairro: </label><input id="bairro"type="text" class="txt bradius" name="bairro" value=""/>
-			<label id="cidade">Cidade: </label><input id="cidade" type="text" class="txt bradius" name="cidade" value=""/>
-										<label id="uf">UF: </label><input id="uf" type="text" class="txt bradius" name="uf" value=""/>
-										<label id="cep">CEP: </label><input id="cep" type="text" class="txt bradius" name="cep" value=""/>
-										<label id="ddd">DDD: </label><input id="ddd" type="text" class="txt bradius" name="ddd" value=""/>
-										<label id="contato">Contato: </label><input id="contato" type="text" class="txt bradius" name="contato" value=""/>
-										<label id="fone1">Fone: </label><input id="fone1" type="text" class="txt bradius" name="fone1" value=""/>
-										<input id="fone2"type="text" class="txt bradius" name="fone2" value=""/>
-										<label id="email1">E-mail: </label><input id="email1" type="text" class="txt bradius" name="email1" value=""/>
-										<input id="email2" type="text" class="txt bradius" name="email2" value=""/>
-										<label id="classificacao">Classificação: </label><input id="classificacao" type="text" class="txt bradius" name="classificacao" value=""/>
-										<label id="regiao">Região: </label><input id="regiao" type="text" class="txt bradius" name="regiao" value=""/>
-										<label id="cnpj">CNPJ: </label><input id="cnpj" type="text" class="txt bradius" name="cnpj" value=""/>
-								</fieldset>	
-							</form>
-						</div>
-							<br>
-							<br>
-								<div id="hora">
-									<body>
+					<br>
+							<div id="hora">
+								<body>
 										<script language="JavaScript">
 
 											document.write("<font color='#00456F' size='3' face='arial'>")
@@ -79,12 +82,15 @@
 											var daym=mydate.getDate()
 											if (daym<10)
 											daym="0"+daym
-											var dayarray=new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-eira","Sábado")
+											var dayarray=new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado")
 											var montharray=new Array(" de Janeiro de "," de Fevereiro de "," de Março de ","de Abril de ","de Maio de ","de Junho de","de Julho de ","de Agosto de ","de Setembro de "," de Outubro de "," de Novembro de "," de Dezembro de ")
 											document.write("   "+dayarray[day]+", "+daym+" "+montharray[month]+year+" ")
 											document.write("</b></i></font>")
-										</script>												
-									</body>
-								</div>
+											</script>
+											
+							</body>
+							</div>
+
+	</div>
 </body>
 </html>

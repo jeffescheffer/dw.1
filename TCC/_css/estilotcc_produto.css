@@ -36,7 +36,7 @@ button#login_cliente:hover a{
   color:#fff;
 }
 
- div#visualizacao_produto {
+ div#visualizacao_cliente{
 	margin-top: -400px;
 	width: 880px;
 	height: 180px;
@@ -45,7 +45,16 @@ button#login_cliente:hover a{
 	background-color: ;
 	}
 
- 
+  div#fild {
+    background-color: white;
+    width: 160px;
+    height: 15px;
+    position: relative;
+    top: -388px;
+    left: 335px;
+    opacity: 1.0;
+    }
+
 fieldset {
   height: 160px;
   box-shadow:0 2px 7px #00456F;
