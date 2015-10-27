@@ -1,16 +1,5 @@
 @charset "UTF-8";
 
-div#menu_cliente {
-position: relative;
-float: right;
-background-color:;
-width: 550px;
-height: 100px;
-margin-top: -510px;
-padding: 10px 0px 0px 20px;
-box-shadow:;
-}
-
 button#login_cliente{
   display:inline-block;
   border:none;
@@ -36,20 +25,22 @@ button#login_cliente:hover a{
   color:#fff;
 }
 
- div#visualizacao_cliente{
+nav#visualizacao_cliente{
 	margin-top: -400px;
 	width: 880px;
 	height: 180px;
 	float: right;;
 	position: relative;
-	background-color: ;
+	background-color:;
 	}
-
- 
 
 fieldset {
   height: 160px;
   box-shadow:0 2px 7px #00456F;
+}
+
+input * {
+  cursor: pointer;
 }
 
 label#razao_social {
@@ -58,7 +49,7 @@ label#razao_social {
   top: -15px;
 }
 
-#visualizacao_cliente input#razaosocial {
+input#razaosocial {
   position: absolute;
   left:108px;
   top:20px;
@@ -73,7 +64,7 @@ label#endereco {
   position: absolute;
 }
 
-#visualizacao_cliente input#endereco {
+input#endereco {
   position: absolute;
   left:423px;
   top:20px;
@@ -88,7 +79,7 @@ label#bairro {
   top: 25px;
 }
 
-#visualizacao_cliente input#bairro {
+input#bairro {
   position: absolute;
   left:728px;
   top:20px;
@@ -103,7 +94,7 @@ label#cidade {
   position: absolute;
 }
 
-#visualizacao_cliente input#cidade {
+input#cidade {
   position: absolute;
   left:65px;
   top:60px;
@@ -118,7 +109,7 @@ label#uf {
   top: 65px;
 }
 
-#visualizacao_cliente input#uf {
+input#uf {
   position: absolute;
   left:280px;
   top:60px;
@@ -133,7 +124,7 @@ label#cep {
   top: 65px;
 }
 
-#visualizacao_cliente input#cep {
+input#cep {
   position: absolute;
   left:365px;
   top:60px;
@@ -148,7 +139,7 @@ label#ddd {
   top: 65px;
 }
 
-#visualizacao_cliente input#ddd {
+input#ddd {
   position: absolute;
   left:533px;
   top:60px;
@@ -163,7 +154,7 @@ label#fone1 {
   top: 65px;
 }
 
-#visualizacao_cliente input#fone1 {
+input#fone1 {
   position: absolute;
   left:610px;
   top:60px;
@@ -172,7 +163,7 @@ label#fone1 {
   box-shadow:0 2px 7px #00456F;
 }
 
-#visualizacao_cliente input#fone2 {
+input#fone2 {
   position: absolute;
   left:735px;
   top:60px;
@@ -187,7 +178,7 @@ label#email1 {
   top: 105px;
 }
 
-#visualizacao_cliente input#email1 {
+input#email1 {
   position: absolute;
   left:65px;
   top:100px;
@@ -196,7 +187,7 @@ label#email1 {
   box-shadow:0 2px 7px #00456F;
 }
 
-#visualizacao_cliente input#email2 {
+input#email2 {
   position: absolute;
   left:262px;
   top:100px;
@@ -211,7 +202,7 @@ label#email1 {
   top: 105px;
 }
 
-#visualizacao_cliente input#cnpj {
+input#cnpj {
   position: absolute;
   left:505px;
   top:100px;
@@ -226,7 +217,7 @@ label#classificacao {
   top: 145px;
 }
 
-#visualizacao_cliente input#classificacao {
+input#classificacao {
   position: absolute;
   left:110px;
   top:140px;
@@ -242,7 +233,7 @@ label#regiao {
   top: 145px;
 }
 
-#visualizacao_cliente input#regiao {
+input#regiao {
   position: absolute;
   left:205px;
   top:140px;
@@ -257,7 +248,7 @@ label#contato {
   top: 145px;
 }
 
-#visualizacao_cliente input#contato {
+input#contato {
   position: absolute;
   left:310px;
   top:140px;
@@ -266,24 +257,24 @@ label#contato {
   box-shadow:0 2px 7px #00456F;
 }
 
-.txt{
+.bradius {
+  border-radius:6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+}
+
+.txt {
   border:none;
   height:30px;
   border:thin solid #f1f1f1;
   cursor: pointer;
 }
 
-.txt:focus{
+.txt:focus {
   border:thin solid #00456F;
   box-shadow:0 2px 7px #00456F;
   -webkit-box-shadow:0 2px 7px #00456F;
   -moz-box-shadow:0 2px 7px #00456F;
-}
-
-.bradius{
-	border-radius:6px;
-	-webkit-border-radius:6px;
-	-moz-border-radius:6px;
 }
 
 textarea#visualizacao_cliente {

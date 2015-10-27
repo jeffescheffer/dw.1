@@ -1,80 +1,23 @@
 @charset "UTF-8";
 
-div#menu_cliente {
-position: relative;
-float: right;
-background-color:;
-width: 550px;
-height: 100px;
-margin-top: -510px;
-padding: 10px 0px 0px 20px;
-box-shadow:;
+label#assoalho {
+  margin-left: 10px;
 }
-
-button#login_cliente{
-  display:inline-block;
-  border:none;
-  border-radius: 10px;
-  width: 170px;
-  height: 35px;
-  margin-top: 0px;
-  cursor: pointer;
-  font:400 16px Arial;
-  color:#999;
-  padding: 10px;
-  padding-top: 10px;
-  -webkit-transition:all 0.5s linear;
-}
-
-button#login_cliente:hover {
-  background:#00456F;
-  color:#fff;
-  -webkit-transition:all 0.5s linear;
-}
-
-button#login_cliente:hover a{
-  color:#fff;
-}
-
- div#visualizacao_cliente{
-	margin-top: -400px;
-	width: 880px;
-	height: 180px;
-	float: right;;
-	position: relative;
-	background-color: ;
-	}
-
-  div#fild {
-    background-color: white;
-    width: 160px;
-    height: 15px;
-    position: relative;
-    top: -388px;
-    left: 335px;
-    opacity: 1.0;
-    }
-
-fieldset {
-  height: 160px;
-  box-shadow:0 2px 7px #00456F;
-}
-
-label#razao_social {
+/*label#carroceria {
   left: 15px;
   position: absolute;
   top: -15px;
 }
 
-#visualizacao_cliente input#razaosocial {
+select#carroceria {
   position: absolute;
-  left:108px;
-  top:20px;
-  width:240px;
-  height: 25px;
+  left:408px;
+  top:200px;
   box-shadow:0 2px 7px #00456F;
-}
+}*/
 
+
+/*
 label#endereco {
   left: 355px;
   top: 25px;
@@ -272,29 +215,7 @@ label#contato {
   width: 150px;
   height: 25px;
   box-shadow:0 2px 7px #00456F;
-}
+}*/
 
-.txt{
-  border:none;
-  height:30px;
-  border:thin solid #f1f1f1;
-  cursor: pointer;
-}
 
-.txt:focus{
-  border:thin solid #00456F;
-  box-shadow:0 2px 7px #00456F;
-  -webkit-box-shadow:0 2px 7px #00456F;
-  -moz-box-shadow:0 2px 7px #00456F;
-}
 
-.bradius{
-	border-radius:6px;
-	-webkit-border-radius:6px;
-	-moz-border-radius:6px;
-}
-
-textarea#visualizacao_cliente {
-  box-shadow:0 2px 7px #00456F;
-  position: absolute;
-}

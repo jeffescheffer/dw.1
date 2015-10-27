@@ -4,8 +4,33 @@
 	<title>PaginaProduto</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="_css/estilotcc.css"/>
-	<link rel="stylesheet" type="text/css" href="_css/estilotcc_cliente.css">
 	<link rel="stylesheet" type="text/css" href="_css/estilotcc_produto.css">
+	<link rel="stylesheet" type="text/css" href="_css/estilotcc_cliente.css">
+	<script type="text/javascript">
+		function escolha(s1,s2){
+			var s1 = document.getElementById(s1);
+			var s2 = document.getElementById(s2);
+			s2.innerHTML = "";
+			if (s1.value == "cargaseca") {
+				var optionArray = ["|","cargaseca_assoalho_naval18mm | CHAPA COMPENSADO 18MM","cargaseca_assoalho_machoefemea | MACHO E FEMEA 28MM OU NAVAL 27MM","cargaseca_assoalho_omega | OMEGA","cargaseca_assoalho_chapaxadrez4e75mm | CHAPA XADREZ 4,75MM 1/4'","cargaseca_assoalho_chapaxadrez3mm | CHAPA XADREZ 3,00MM 3/16'","cargaseca_assoalho_chapaacolisa4e75mm | CHAPA AÇO LISA 4,75MM 1/4'", "cargaseca_assoalho_chapaacolisa3mm | CHAPA AÇO LISA 3,00MM","cargaseca_carreta | CARRETA CARGA SECA"
+				];
+			} else if (s1.value == "lonada") {
+				var optionArray = ["|","lonado_assoalho_naval18mm | CHAPA COMPENSADO 18MM","lonado_assoalho_machoefemea | MACHO E FEMEA 28MM OU NAVAL 27MM","lonado_omega | OMEGA","lonado_assoalho_chapaxadrez4e75mm | CHAPA XADREZ 4,75MM 1/4'","lonado_assoalho_chapaxadrez3mm | CHAPA XADREZ 3,00MM 3/16'","lonado_assoalho_chapaacolisa4e75mm | CHAPA AÇO LISA 4,75MM 1/4'", "lonado_assoalho_chapaacolisa3mm | CHAPA AÇO LISA 3,00MM","lonado_carreta | CARRETA LONADA"
+				];
+			} else if (s1.value == "frigorifica") {
+				var optionArray = ["|","frigorifica_normal | FRIGORÍFICA NORMAL","frigorifica_normal_carreta | FRIGORÍFICA NORMAL CARRETA","frigorifica_paleteira | FRIGORÍFICA PALETEIRA","frigorifica_paleteira_carreta | FRIGORÍFICA PALETEIRA CARRETA"
+				];
+			}
+			for (var option in optionArray) {
+				var pair = optionArray[option].split("|");
+				var newOption = document.createElement ("option");
+				newOption.value = pair[0];
+				newOption.innerHTML = pair[1];
+				s2.options.add(newOption);
+			}
+			}
+
+	</script>
 </head>
 <body>
 	<div id="corpo">
@@ -15,58 +40,46 @@
     		</div>
 		</div>
 			<div id="menu">		
-				<button id="login" type="submit"><a href=""/a>Cliente</button>
+				<button id="login" type="submit">Cliente</button>
 					<br><br>
-				<button id="login" type="submit"><a href=""/a>Produto</button>
+				<button id="login" type="submit">Produto</button>
 					<br><br>
-				<button id="login" type="submit"><a href=""/a>Orçamento</button>
+				<button id="login" type="submit">Orçamento</button>
 					<br><br>
-				<button id="login" type="submit"><a href=""/a>Pedido</button>
+				<button id="login" type="submit">Pedido</button>
 					<br><br>
-				<button id="login" type="submit"><a href=""/a>Calculadora</button>
+				<button id="login" type="submit">Calculadora</button>
 			</div>
 					<div id="menu_cliente">
-						<label id="valortotal">Valor: </label><input id="valortotal" type="text" class="txt bradius" name="valortotal" value=""/>
+						<label id="valor">Valor: </label><input id="valor" type="text" class="txt bradius" name="valortotal" value=""/>
 						<br><br>
-						<label id="valordesconto">Valor com desconto: </label><input id="valordesconto" type="text" class="txt bradius" name="valordesconto" value=""/>
-					<!--<button id="login_cliente" type="submit"><a href=""/a>Cadastrar</button>
-						
-					<button id="login_cliente" type="submit"><a href=""/a>Excluir</button>
-						
-					<button id="login_cliente" type="submit"><a href=""/a>Consultar</button>
-						<br><br>
-					<button id="login_cliente" type="submit"><a href=""/a>Alterar</button>
-						
-					<button id="login_cliente" type="submit"><a href=""/a>Editar</button>
-
-					<button id="login_cliente" type="submit"><a href=""/a>Orçamento</button>-->
-					
-			</div>
-					<div id="visualizacao_cliente">
-					<form id="visualizacao_cliente" class="form bradius">
-						<fieldset id="visualizacao_carroceria">
-						<legend>Carroceria</legend>
-						<label id="razaosocial">Razão Social: </label><input id="razaosocial" type="text" class="txt bradius" name="razaosocial" value=""/>
-						<label id="endereco">Endereço: </label><input id="endereco" type="text" class="txt bradius" name="endereco" value=""/>	
-						<label id="bairro">Bairro: </label><input id="bairro"type="text" class="txt bradius" name="bairro" value=""/>
-						<label id="cidade">Cidade: </label><input id="cidade" type="text" class="txt bradius" name="cidade" value=""/>
-						<label id="uf">UF: </label><input id="uf" type="text" class="txt bradius" name="uf" value=""/>
-						<label id="cep">CEP: </label><input id="cep" type="text" class="txt bradius" name="cep" value=""/>
-						<label id="ddd">DDD: </label><input id="ddd" type="text" class="txt bradius" name="ddd" value=""/>
-						<label id="contato">Contato: </label><input id="contato" type="text" class="txt bradius" name="contato" value=""/>
-						<label id="fone1">Fone: </label><input id="fone1" type="text" class="txt bradius" name="fone1" value=""/>
-						<input id="fone2"type="text" class="txt bradius" name="fone2" value=""/>
-						<label id="email1">E-mail: </label><input id="email1" type="text" class="txt bradius" name="email1" value=""/>
-						<input id="email2" type="text" class="txt bradius" name="email2" value=""/>
-						<label id="classificacao">Classificação: </label><input id="classificacao" type="text" class="txt bradius" name="classificacao" value=""/>
-						<label id="regiao">Região: </label><input id="regiao" type="text" class="txt bradius" name="regiao" value=""/>
-						<label id="cnpj">CNPJ: </label><input id="cnpj" type="text" class="txt bradius" name="cnpj" value=""/>
-						</fieldset>	
-						<br>
-						<textarea id="visualizacao_cliente" rows="13" cols="122">							
-						</textarea>
-						</form>
+						<label id="valor">Valor com desconto: </label><input id="valor" type="text" class="txt bradius" name="valordesconto" value=""/>
 					</div>
+						<nav id="visualizacao_cliente">
+							<form id="visualizacao_cliente">
+								<fieldset id="visualizacao_carroceria">
+								<legend>Carroceria</legend>
+								<div class="campo">
+								  <label for="carroceria">Carroceria:</label>
+								  <select id="carroceria" name="carroceria" onchange="escolha(this.id,'assoalho')">
+								    <option value=""></option>
+								    <option value="cargaseca">CARGA SECA</option>
+								    <option value="lonada">LONADA</option>
+								    <option value="frigorifica">FRIGORÍFICA</option>
+								  </select>
+								  	<label for="assoalho">Assoalho:</label>
+								  	<select id="assoalho" name="assoalhos" onchange="escolhamedidas(this.id,'medidas')">
+								  </select>
+								  	<label for="medidas">Medidas:</label>
+								  	<select id="medidas" name="medidas">
+								  </select>
+								</div>
+								</fieldset>	
+								<br>
+								<textarea id="visualizacao_cliente" rows="13" cols="122">							
+								</textarea>
+							</form>
+						</nav>
 					<br>
 							<div id="hora">
 								<body>
@@ -88,7 +101,7 @@
 											document.write("</b></i></font>")
 											</script>
 											
-							</body>
+								</body>
 							</div>
 
 	</div>
