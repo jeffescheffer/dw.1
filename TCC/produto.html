@@ -28,7 +28,8 @@
 				newOption.innerHTML = pair[1];
 				s2.options.add(newOption);
 			}
-			}
+			
+		}
 
 	</script>
 </head>
@@ -68,10 +69,35 @@
 								    <option value="frigorifica">FRIGORÍFICA</option>
 								  </select>
 								  	<label for="assoalho">Assoalho:</label>
-								  	<select id="assoalho" name="assoalhos" onchange="escolhamedidas(this.id,'medidas')">
+								  	<select id="assoalho" name="assoalhos">
 								  </select>
 								  	<label for="medidas">Medidas:</label>
 								  	<select id="medidas" name="medidas">
+								  		<option value=""></option>
+								  	<optgroup label="Carga Seca">
+								  		<option value="cs2,30">2,30 x 2,00 x 1,70</option>
+								  		<option value="cs2,50">2,50 x 2,00 x 1,70</option>
+								  		<option value="cs2,70">2,70 x 1,80 x 1,70</option>
+								  		<option value="cs3,30">3,30 x 2,00 x 1,80</option>
+								  		<option value="cs3,80">3,80 x 2,20 x 2,00</option>
+								  		<option value="cs2,70">4,20 x 2,20 x 2,00</option>....
+								  		<option value="cs2,30">2,30 x 2,00 x 1,70</option>
+								  		<option value="cs2,50">2,50 x 2,00 x 1,70</option>
+								  		<option value="cs2,70">2,70 x 1,80 x 1,70</option>
+								  		<option value="cs2,30">2,30 x 2,00 x 1,70</option>
+								  		<option value="cs2,50">2,50 x 2,00 x 1,70</option>
+								  		<option value="cs2,70">2,70 x 1,80 x 1,70</option>
+								  	</optgroup>
+								  	<optgroup label="Lonada">
+								  		<option value="lo2,30">2,30 x 2,00 x 1,70</option>
+								  		<option value="lo2,30">2,30 x 2,00 x 1,70</option>
+								  		<option value="lo2,30">2,30 x 2,00 x 1,70</option>
+								  	</optgroup>
+								  	<optgroup label="Frigorífica">
+								  		<option value="fr2,30">2,30 x 2,00 x 1,70</option>
+								  		<option value="fr2,30">2,30 x 2,00 x 1,70</option>
+								  		<option value="fr2,30">2,30 x 2,00 x 1,70</option>
+								  	</optgroup>
 								  </select>
 								</div>
 								</fieldset>	
