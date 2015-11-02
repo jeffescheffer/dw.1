@@ -27,8 +27,11 @@
 			</div>
 
 					<div id="menu_cliente">
-						<button id="login_cliente" type="submit">Cadastrar</button>
-							
+
+						<form action="insert_clientes.php" method="post">
+						
+						<button id="login_cliente" type="submit"<a href="insert_clientes.php"></a>Cadastrar</button>
+													
 						<button id="login_cliente" type="submit">Excluir</button>
 							
 						<button id="login_cliente" type="submit">Consultar</button>
@@ -41,29 +44,45 @@
 					</div>
 
 					<nav id="visualizacao_cliente">
-						<form>
+												
 							<fieldset id="visualizacao_cliente">
 							<legend>Formulário de Cadastro</legend>
-								<label id="razaosocial">Razão Social: </label><input id="razaosocial" type="text" class="txt bradius" name="razaosocial" value=""/>
-								<label id="endereco">Endereço: </label><input id="endereco" type="text" class="txt bradius" name="endereco" value=""/>	
-								<label id="bairro">Bairro: </label><input id="bairro"type="text" class="txt bradius" name="bairro" value=""/>
-								<label id="cidade">Cidade: </label><input id="cidade" type="text" class="txt bradius" name="cidade" value=""/>
-								<label id="uf">UF: </label><input id="uf" type="text" class="txt bradius" name="uf" value=""/>
-								<label id="cep">CEP: </label><input id="cep" type="text" class="txt bradius" name="cep" value=""/>
-								<label id="ddd">DDD: </label><input id="ddd" type="text" class="txt bradius" name="ddd" value=""/>
-								<label id="contato">Contato: </label><input id="contato" type="text" class="txt bradius" name="contato" value=""/>
-								<label id="fone1">Fone: </label><input id="fone1" type="text" class="txt bradius" name="fone1" value=""/>
-								<input id="fone2"type="text" class="txt bradius" name="fone2" value=""/>
-								<label id="email1">E-mail: </label><input id="email1" type="text" class="txt bradius" name="email1" value=""/>
-								<input id="email2" type="text" class="txt bradius" name="email2" value=""/>
-								<label id="classificacao">Classificação: </label><input id="classificacao" type="text" class="txt bradius" name="classificacao" value=""/>
-								<label id="regiao">Região: </label><input id="regiao" type="text" class="txt bradius" name="regiao" value=""/>
-								<label id="cnpj">CNPJ: </label><input id="cnpj" type="text" class="txt bradius" name="cnpj" value=""/>
+								<label id="razaosocial">Razão Social: </label><input id="razaosocial" type="text" class="txt bradius" name="razaosocial"/>
+								<label id="endereco">Endereço: </label><input id="endereco" type="text" class="txt bradius" name="endereco"/>	
+								<label id="bairro">Bairro: </label><input id="bairro"type="text" class="txt bradius" name="bairro"/>
+								<label id="municipio">Cidade: </label><input id="municipio" type="text" class="txt bradius" name="municipio"/>
+								<label id="uf">UF: </label><input id="uf" type="text" class="txt bradius" name="uf"/>
+								<label id="cep">CEP: </label><input id="cep" type="text" class="txt bradius" name="cep"/>
+								<label id="ddd">DDD: </label><input id="ddd" type="text" class="txt bradius" name="ddd"/>
+								<label id="contato">Contato: </label><input id="contato" type="text" class="txt bradius" name="contato"/>
+								<label id="tel_1">Fone: </label><input id="tel_1" type="text" class="txt bradius" name="tel_1"/>
+								<input id="tel_2"type="text" class="txt bradius" name="tel_2"/>
+								<label id="email_1">E-mail: </label><input id="email_1" type="text" class="txt bradius" name="email_1"/>
+								<input id="email_2" type="text" class="txt bradius" name="email_2"/>
+								<label id="classificacao">Classificação: </label><input id="classificacao" type="text" class="txt bradius" name="classificacao"/>
+								<label id="zona">Região: </label><input id="zona" type="text" class="txt bradius" name="zona"/>
+								<label id="cnpj">CNPJ: </label><input id="cnpj" type="text" class="txt bradius" name="cnpj"/>
 							</fieldset>
-							<br>
-							<textarea id="visualizacao_cliente" rows="13" cols="122">							
-							</textarea>
 						</form>
+					<br>
+					<table id="visualizacao_cliente">
+						<tr>
+							<td><b>Razão Social</b></td>
+							<td><b>Cidade</b></td>
+							<td><b>DDD</td>
+							<td><b>Telefone</b></td>
+							<td><b>E-mail</b></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					</table>
 					</nav>
 					<br>
 							<div id="hora">

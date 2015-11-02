@@ -88,13 +88,13 @@ input#bairro {
   box-shadow:0 2px 7px #00456F;
 }
 
-label#cidade {
+label#municipio {
   top: 65px;
   left: 15px;
   position: absolute;
 }
 
-input#cidade {
+input#municipio {
   position: absolute;
   left:65px;
   top:60px;
@@ -148,13 +148,13 @@ input#ddd {
   box-shadow:0 2px 7px #00456F;
 }
 
-label#fone1 {
+label#tel_1 {
   left: 570px;
   position: absolute;
   top: 65px;
 }
 
-input#fone1 {
+input#tel_1 {
   position: absolute;
   left:610px;
   top:60px;
@@ -163,7 +163,7 @@ input#fone1 {
   box-shadow:0 2px 7px #00456F;
 }
 
-input#fone2 {
+input#tel_2 {
   position: absolute;
   left:735px;
   top:60px;
@@ -172,13 +172,14 @@ input#fone2 {
   box-shadow:0 2px 7px #00456F;
 }
 
-label#email1 {
+label#email_1 {
   left: 15px;
   position: absolute;
   top: 105px;
 }
 
-input#email1 {
+
+input#email_1 {
   position: absolute;
   left:65px;
   top:100px;
@@ -187,7 +188,7 @@ input#email1 {
   box-shadow:0 2px 7px #00456F;
 }
 
-input#email2 {
+input#email_2 {
   position: absolute;
   left:262px;
   top:100px;
@@ -227,13 +228,13 @@ input#classificacao {
   }
 
 
-label#regiao {
+label#zona {
   left: 150px;
   position: absolute;
   top: 145px;
 }
 
-input#regiao {
+input#zona {
   position: absolute;
   left:205px;
   top:140px;
@@ -277,7 +278,9 @@ input#contato {
   -moz-box-shadow:0 2px 7px #00456F;
 }
 
-textarea#visualizacao_cliente {
+table#visualizacao_cliente {
   box-shadow:0 2px 7px #00456F;
   position: absolute;
+  width: 100%;
+  border:1px;
 }
