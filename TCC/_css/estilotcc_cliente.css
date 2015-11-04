@@ -229,7 +229,11 @@ input#abc {
 
 
 label#zona {
+<<<<<<< HEAD
   left: 780px;
+=======
+  left: 150px;
+>>>>>>> f34971590a282d4e7442aae6e925f5227486c17c
   position: absolute;
   top: 105px;
 }
