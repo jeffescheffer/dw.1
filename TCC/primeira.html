@@ -1,3 +1,7 @@
+<?php
+include("connect.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,44 +30,181 @@
 				<button id="login" type="submit">Calculadora</button>
 			</div>
 
-					<div id="menu_cliente">
-						<button id="login_cliente" type="submit">Cadastrar</button>
-							
-						<button id="login_cliente" type="submit">Excluir</button>
-							
-						<button id="login_cliente" type="submit">Consultar</button>
-							<br><br>
-						<button id="login_cliente" type="submit">Alterar</button>
-							
-						<button id="login_cliente" type="submit">Editar</button>
+			<!--<//?php
+					$var1=	"";
+					$var2=	"";
+					$var3=	"";
+					$var4=	"";
+					$var5=	"";
+					$var6=	"";
+					$var7=	"";
+					$var8=	"";
+					$var9=	"";
+					$var10=	"";
+					$var11=	"";
+					$var12=	"";
+					$var13=	"";
+					$var14=	"";
+					$var15=	"";
+					$var16=	"";
 
-						<button id="login_cliente" type="submit">Orçamento</button>
+					if (isset($_POST["bto1"])) {
+						$bto=$_POST["bto1"];
+						$consultar_razaosocial=	$_POST["consulta_razaosocial"];
+												
+						if ($bto=="consultar") {
+							$sql=		"SELECT * FROM cadastro_clientes where razaosocial='$consultar_razaosocial'";
+							$consulta=	mysql_query($sql,$connect);
+							while ($resul=mysql_fetch_array($consulta)) {
+								$var1=	$resul [1];
+								$var2=	$resul [2];
+								$var3=	$resul [3];
+								$var4=	$resul [4];
+								$var5= 	$resul [5];
+								$var6=	$resul [6];
+								$var7=	$resul [7];
+								$var8=	$resul [8];
+								$var9=	$resul [9];
+								$var10= $resul [10];
+								$var11=	$resul [11];
+								$var12=	$resul [12];
+								$var13=	$resul [13];
+								$var14=	$resul [14];
+								$var15= $resul [15];
+								$var16=	$resul [16];
+								
+							}
+
+
+					
+						}
+
+						if ($bto=="cadastrar") {
+
+							$razaosocial  	=$_POST['txtrazaosocial'];
+							$cnpj			=$_POST['txtcnpj'];
+							$contato		=$_POST['txtcontato'];
+							$classificacao	=$_POST['txtclassificacao'];
+							$municipio		=$_POST['txtmunicipio'];
+							$uf				=$_POST['txtuf'];
+							$endereco		=$_POST['txtendereco'];
+							$cep			=$_POST['txtcep'];
+							$ddd			=$_POST['txtddd'];
+							$tel_1			=$_POST['txttel_1'];
+							$tel_2			=$_POST['txttel_2'];
+							$bairro			=$_POST['txtbairro'];
+							$zona			=$_POST['txtzona'];
+							$email_1		=$_POST['txtemail_1'];
+							$email_2		=$_POST['txtemail_2'];
+
+							$sql="INSERT INTO 	cadastro_clientes(
+												razaosocial, 
+												cnpj, 
+												contato, 
+												classificacao, 
+												municipio, 
+												uf, 
+												endereco, 
+												cep, 
+												ddd, 
+												tel_1, 
+												tel_2, 
+												bairro, 
+												zona, 
+												email_1, 
+												email_2
+												)
+								VALUES(
+												'$razaosocial', 
+												'$cnpj', 
+												'$contato', 
+												'$classificacao', 
+												'$municipio', 
+												'$uf', 
+												'$endereco', 
+												'$cep', 
+												'$ddd', 
+												'$tel_1', 
+												'$tel_2', 
+												'$bairro', 
+												'$zona', 
+												'$email_1', 
+												'$email_2'
+												)";	
+							$consulta=	mysql_query($sql,$connect);
+							
+					}
+
+					?>-->
+
+					
+
+			<div id="menu_cliente">
+												
+						<button id="login_cliente" type="submit" name="bto1" value="cadastrar"<a href="cadastrar.php"></a>Cadastrar</button>
+													
+						<button id="login_cliente" type="submit" name="bto1" value="excluir"<a href="excluir.php"></a>Excluir</button>
+							
+						<button id="login_cliente" type="submit" name="bto1" value="consultar"<a href="consultar.php"></a>Consultar</button>
+							<br><br>
+						<button id="login_cliente" type="submit" name="bto1">Alterar</button>
+							
+						<button id="login_cliente" type="submit" name="bto1" value="editar"<a href="editar.php"></a>Editar</button>
+
+						<button id="login_cliente" type="submit" name="bto1" value="orçamento">Orçamento</button>
 					</div>
 
-					<nav id="visualizacao_cliente">
-						<form>
+					
+
+
+
+					<!--<nav id="visualizacao_cliente">
+
+						<form action="insert_clientes.php" method="post" style="text-align:center">												
 							<fieldset id="visualizacao_cliente">
 							<legend>Formulário de Cadastro</legend>
-								<label id="razaosocial">Razão Social: </label><input id="razaosocial" type="text" class="txt bradius" name="razaosocial" value=""/>
-								<label id="endereco">Endereço: </label><input id="endereco" type="text" class="txt bradius" name="endereco" value=""/>	
-								<label id="bairro">Bairro: </label><input id="bairro"type="text" class="txt bradius" name="bairro" value=""/>
-								<label id="cidade">Cidade: </label><input id="cidade" type="text" class="txt bradius" name="cidade" value=""/>
-								<label id="uf">UF: </label><input id="uf" type="text" class="txt bradius" name="uf" value=""/>
-								<label id="cep">CEP: </label><input id="cep" type="text" class="txt bradius" name="cep" value=""/>
-								<label id="ddd">DDD: </label><input id="ddd" type="text" class="txt bradius" name="ddd" value=""/>
-								<label id="contato">Contato: </label><input id="contato" type="text" class="txt bradius" name="contato" value=""/>
-								<label id="fone1">Fone: </label><input id="fone1" type="text" class="txt bradius" name="fone1" value=""/>
-								<input id="fone2"type="text" class="txt bradius" name="fone2" value=""/>
-								<label id="email1">E-mail: </label><input id="email1" type="text" class="txt bradius" name="email1" value=""/>
-								<input id="email2" type="text" class="txt bradius" name="email2" value=""/>
-								<label id="classificacao">Classificação: </label><input id="classificacao" type="text" class="txt bradius" name="classificacao" value=""/>
-								<label id="regiao">Região: </label><input id="regiao" type="text" class="txt bradius" name="regiao" value=""/>
-								<label id="cnpj">CNPJ: </label><input id="cnpj" type="text" class="txt bradius" name="cnpj" value=""/>
+								<label id="razaosocial">Razão Social: </label><input id="razaosocial" type="text" class="txt bradius" name="txtrazaosocial" value=""/>
+								<label id="endereco">Endereço: </label><input id="endereco" type="text" class="txt bradius" name="txtendereco" value=""/>	
+								<label id="bairro">Bairro: </label><input id="bairro" type="text" class="txt bradius" name="txtbairro" value=""/>
+								<label id="municipio">Cidade: </label><input id="municipio" type="text" class="txt bradius" name="txtmunicipio" value="" />
+								<label id="uf">UF: </label><input id="uf" type="text" class="txt bradius" name="txtuf" value="" />
+								<label id="cep">CEP: </label><input id="cep" type="text" class="txt bradius" name="txtcep" value="" />
+								<label id="ddd">DDD: </label><input id="ddd" type="text" class="txt bradius" name="txtddd" value="" />
+								<label id="contato">Contato: </label><input id="contato" type="text" class="txt bradius" name="txtcontato" value="" />
+								<label id="tel_1">Fone: </label><input id="tel_1" type="text" class="txt bradius" name="txttel_1" value="" />
+								<input id="tel_2" type="text" class="txt bradius" name="txttel_2" value="" />
+								<label id="email_1">E-mail: </label><input id="email_1" type="text" class="txt bradius" name="txtemail_1" value="" />
+								<input id="email_2" type="text" class="txt bradius" name="txtemail_2" value="" />
+								<label id="abc">ABC: </label><input id="abc" type="text" class="txt bradius" name="txtabc" value="" />
+								<label id="zona">Região: </label><input id="zona" type="text" class="txt bradius" name="txtzona" value="" />
+								<label id="cnpj">CNPJ: </label><input id="cnpj" type="text" class="txt bradius" name="txtcnpj" value="" />
+								<input id="cons_razaosocial" type="text" class="txt bradius" name="consulta_razaosocial" placeholder ="Consulta: Razão Social">
+								<input id="cons_municipio" type="text" class="txt bradius" name="consulta_municipio" placeholder ="Consulta Cidade">
+								<input id="cons_ddd" type="text" class="txt bradius" name="consulta_ddd" placeholder ="DDD">
+
 							</fieldset>
-							<br>
-							<textarea id="visualizacao_cliente" rows="13" cols="122">							
-							</textarea>
 						</form>
+					<br>-->
+					
+					<!--<table id="visualizacao_cliente">
+						<tr>
+							<td><b>Razão Social</b></td>
+							<td><b>Cidade</b></td>
+							<td><b>DDD</td>
+							<td><b>Telefone</b></td>
+							<td><b>E-mail</b></td>
+						</tr>
+							
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					</table>-->
 					</nav>
 					<br>
 							<div id="hora">
