@@ -2,6 +2,7 @@
 $connect 	=mysql_connect('localhost','root','');
 $selectDb 	=mysql_select_db('sistema_tcc', $connect) or die (mysql_error());
 
+
 $razaosocial  	=$_POST['txtrazaosocial'];
 $cnpj			=$_POST['txtcnpj'];
 $contato		=$_POST['txtcontato'];
@@ -17,7 +18,6 @@ $bairro			=$_POST['txtbairro'];
 $zona			=$_POST['txtzona'];
 $email_1		=$_POST['txtemail_1'];
 $email_2		=$_POST['txtemail_2'];
-
 
 $sql 		= "INSERT INTO cadastro_clientes(
 												razaosocial, 

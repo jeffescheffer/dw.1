@@ -30,6 +30,7 @@ include("connect.php");
 				<button id="login" type="submit">Calculadora</button>
 			</div>
 
+
 			<!--<//?php
 					$var1=	"";
 					$var2=	"";
@@ -75,8 +76,6 @@ include("connect.php");
 								
 							}
 
-
-					
 						}
 
 						if ($bto=="cadastrar") {
@@ -135,11 +134,12 @@ include("connect.php");
 							
 					}
 
-					?>-->
 
-					
+					?>-->
+			
 
 			<div id="menu_cliente">
+
 												
 						<button id="login_cliente" type="submit" name="bto1" value="cadastrar"<a href="cadastrar.php"></a>Cadastrar</button>
 													
@@ -150,6 +150,32 @@ include("connect.php");
 						<button id="login_cliente" type="submit" name="bto1">Alterar</button>
 							
 						<button id="login_cliente" type="submit" name="bto1" value="editar"<a href="editar.php"></a>Editar</button>
+
+						
+						<button id="login_cliente" type="submit" name="bto1" value="cadastrar">Cadastrar</button>
+													
+						<button id="login_cliente" type="submit" name="bto1" value="excluir">Excluir</button>
+							
+						
+					}
+
+					
+
+					
+
+			<div id="menu_cliente">
+						<form action="" method="post">
+						
+						<button id="login_cliente" type="submit" name="bto1" value="cadastrar">Cadastrar</button>
+													
+						<button id="login_cliente" type="submit" name="bto1" value="excluir">Excluir</button>
+			
+						<button id="login_cliente" type="submit" name="bto1" value="consultar">Consultar</button>
+							<br><br>
+						<button id="login_cliente" type="submit" name="bto1">Alterar</button>
+							
+						<button id="login_cliente" type="submit" name="bto1" value="editar">Editar</button>
+
 
 						<button id="login_cliente" type="submit" name="bto1" value="orçamento">Orçamento</button>
 					</div>
@@ -178,15 +204,14 @@ include("connect.php");
 								<label id="abc">ABC: </label><input id="abc" type="text" class="txt bradius" name="txtabc" value="" />
 								<label id="zona">Região: </label><input id="zona" type="text" class="txt bradius" name="txtzona" value="" />
 								<label id="cnpj">CNPJ: </label><input id="cnpj" type="text" class="txt bradius" name="txtcnpj" value="" />
-								<input id="cons_razaosocial" type="text" class="txt bradius" name="consulta_razaosocial" placeholder ="Consulta: Razão Social">
-								<input id="cons_municipio" type="text" class="txt bradius" name="consulta_municipio" placeholder ="Consulta Cidade">
-								<input id="cons_ddd" type="text" class="txt bradius" name="consulta_ddd" placeholder ="DDD">
 
 							</fieldset>
 						</form>
+
 					<br>-->
 					
 					<!--<table id="visualizacao_cliente">
+
 						<tr>
 							<td><b>Razão Social</b></td>
 							<td><b>Cidade</b></td>
