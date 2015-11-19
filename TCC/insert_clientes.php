@@ -55,8 +55,8 @@ $sql 		= "INSERT INTO cadastro_clientes(
 												)";	
 if (mysql_query($sql)){
 
-header('location: primeira.html?resultado=ok!');
+header('location: primeira.php?resultado=ok!');
 }else{
-	header('location: primeira.html?resultado=false!');
+	header('location: primeira.php?resultado=false!');
 }
 ?>

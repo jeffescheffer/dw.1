@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+div#visualizacao_teste1 {
+  margin-top: 5px;
+}
+
+ table#visualizacao_cliente1 {
+  width: 100%;
+  height: auto;
+  background-size:;
+  margin-top: 20px;
+ }
+
+
 button#login_cliente{
   display:inline-block;
   border:none;
@@ -34,6 +46,18 @@ nav#visualizacao_cliente{
 	background-color:;
 	}
 
+
+  div#visualizacao_cliente_primeira {
+  opacity: 1;
+  margin-top: -400px;
+  width: 880px;
+  height: 400px;
+  float: right;;
+  position: relative;
+  background-color: ;
+
+  }
+
 fieldset {
   height: 160px;
   box-shadow:0 2px 7px #00456F;
@@ -43,10 +67,10 @@ input * {
   cursor: pointer;
 }
 
-label#razao_social {
+label#razaosocial {
   left: 15px;
   position: absolute;
-  top: -15px;
+  top: 22px;
 }
 
 input#razaosocial {
@@ -74,7 +98,7 @@ input#endereco {
 }
 
 label#bairro {
-  margin-left: 575px;
+  margin-left: 665px;
   position: absolute;
   top: 25px;
 }
@@ -309,9 +333,3 @@ placeholder#red {
   -moz-box-shadow:0 2px 7px #00456F;
 }
 
-table#visualizacao_cliente {
-  box-shadow:0 2px 7px #00456F;
-  position: absolute;
-  width: 100%;
-  border:1px;
-}

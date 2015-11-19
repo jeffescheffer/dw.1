@@ -19,9 +19,11 @@ include("connect.php");
     		</div>
 		</div>
 			<div id="menu">		
-				<button id="login" type="submit">Cliente</button>
-					<br><br>
-				<button id="login" type="submit">Produto</button>
+
+				<button id="login" type="submit"><a href="primeira.php">Cliente</a></button>
+
+				<br><br>
+				<button id="login" type="submit"><a href="produto.php">Produto</a>Produto</button>
 					<br><br>
 				<button id="login" type="submit">Orçamento</button>
 					<br><br>
@@ -30,9 +32,27 @@ include("connect.php");
 				<button id="login" type="submit">Calculadora</button>
 			</div>
 
+			<div id="menu_cliente">
+
+						<form action="insert_clientes.php" method="post" style="text-align:center">	
+												
+						<button id="login_cliente" type="submit" name="bto_cadstrar" value="cadastrar">Cadastrar</a></button>
+													
+						<!--<button id="login_cliente" type="submit" name="bto1" value="excluir"><a href="excluir.php">Excluir</a></button>
+							
+						<button id="login_cliente" type="submit" name="bto1" value="consultar"><a href="consultar.php">Consultar</a></button>
+							<br><br>
+						<button id="login_cliente" type="submit" name="bto1">Alterar</button>
+							
+						<button id="login_cliente" type="submit" name="bto1" value="editar"><a href="editar.phbutton">Editar</a></button>
+
+						<button id="login_cliente" type="submit" name="bto1" value="excluir">Excluir</button>-->
+							
+			</div>
+
 			<nav id="visualizacao_cliente">
 
-							<form action="insert_clientes.php" method="post" style="text-align:center">												
+																		
 							<fieldset id="visualizacao_cliente">
 							<legend>Formulário de Cadastro</legend>
 								<label id="razaosocial">Razão Social: </label><input id="razaosocial" type="text" class="txt bradius" name="txtrazaosocial" value=""/>
@@ -50,10 +70,7 @@ include("connect.php");
 								<label id="abc">ABC: </label><input id="abc" type="text" class="txt bradius" name="txtabc" value="" />
 								<label id="zona">Região: </label><input id="zona" type="text" class="txt bradius" name="txtzona" value="" />
 								<label id="cnpj">CNPJ: </label><input id="cnpj" type="text" class="txt bradius" name="txtcnpj" value="" />
-								<input id="cons_razaosocial" type="text" class="txt bradius" name="consulta_razaosocial" placeholder ="Consulta: Razão Social">
-								<input id="cons_municipio" type="text" class="txt bradius" name="consulta_municipio" placeholder ="Consulta Cidade">
-								<input id="cons_ddd" type="text" class="txt bradius" name="consulta_ddd" placeholder ="DDD">
-
+								
 							</fieldset>
 						</form>
 					<br>
